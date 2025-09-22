@@ -32,18 +32,22 @@ body {
 }
 
 .selector-card {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 15px;
   background-color: #828282a2;
   border-style: solid;
   border-width: 2px;
   border-color: #696969;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.7s ease;
 }
 
 .selector-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 .dialog-pages {
@@ -61,6 +65,11 @@ body {
   border-style: solid;
   border-width: 2px;
   border-color: #696969;
+  transition: transform 0.6s ease; 
+}
+
+.dialog-pages:hover {
+  transform: scale(1.01);
 }
 
 .person-left {
@@ -87,10 +96,6 @@ body {
   align-items: center;
 }
 
-.dialog-pages:hover {
-  transform: scale(1.01);
-}
-
 .hidden {
   display: none !important;
 }
@@ -105,6 +110,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.4s ease;
 }
 
 .btn-comand:hover {
@@ -124,6 +130,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+    transition: transform 0.3s ease;
 }
 
 .btn-restart:hover {
@@ -166,6 +173,15 @@ body {
   border-style: solid;
   border-color: #434343;
   z-index: 100;
+}
+
+.person {
+  width: 220px;
+}
+
+.person-activ {
+  width: 220px;
+  transform: scale(1.1);
 }
 
 [hidden] {
