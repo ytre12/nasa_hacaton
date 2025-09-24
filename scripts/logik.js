@@ -28,6 +28,7 @@ const ChangeSelector = () => {
     cardThreeElement.hidden = !cardThreeElement.hidden;
 }
 
+// Показує активний діалог та персонажу
 const SeeActivPerson = () => {
     if (dialogArr[dialogCounter][0] === "left") {
         leftPersonName.className = "person-name-activ";
@@ -50,6 +51,7 @@ const SeeActivPerson = () => {
     }
 }
 
+// Змінює після правильного вибору картинки на селекторі
 const ChangeImgItems = () => {
     cardOneElement.firstElementChild.remove();
     cardTwoElement.firstElementChild.remove();
@@ -62,6 +64,7 @@ const ChangeImgItems = () => {
     itemsSelectorStage++;
 }
 
+// Масив діалогів (1 - хто розмовляє, 2 - сам діалог)
 const dialogArr = [ 
                     ["left", "Діалог 2"],
                     ["right", "Діалог 3"],
@@ -76,28 +79,33 @@ const dialogArr = [
                     ["", "Виберіть селектор:"],
                     ["", "Далі буде)"],];
 
+// Масив діалогів при парвильній відповіді
 const TrueDialog = [
     "Відповідь правильна",
 ]
 
+// Правильні відповіді False - правильна True - неправильна
 const LoseLogic = [
     [false, false, true],
     [true, true, false],
 ]
 
+// Змінна що відповідає за активні зображення при поразці
 let losVar = 0;
 
+// Картинки при поразці
 const loseImg = [
     [`<img src="./lose-img/lose-img.png" alt="" style="width: 350px; margin-top: 70px">`,
     `<img src="./lose-img/lose-img.png" alt="" style="width: 350px; margin-top: 70px">`,
     `<img src="./lose-img/lose-img.png" alt="" style="width: 350px; margin-top: 70px">`]
     ];
 
+// Масив малюнків селекторів 
 const itemSelectorImg = [   
                             [
                             `<img src="./lose-img/lose-img.png" alt="card-1" width="100px">`, 
-                            `<img src="./lose-img/lose-img.png" alt="card-2" width="100px">`,
-                            `<img src="./lose-img/lose-img.png" alt="card-3" width="100px">`
+                            `<img src="./lose-img/nyan-cat.avif" alt="card-2" width="100px">`,
+                            `<img src="./lose-img/test-img.gif" alt="card-3" width="100px">`
                             ],
 
                         ];
