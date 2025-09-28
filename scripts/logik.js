@@ -15,7 +15,6 @@ const raghtPersonName = document.querySelector("#person-right");
 const restartWindow = document.querySelector(".lose-window");
 const restartBtn = document.getElementById("btn-restart");
 
-
 cardOneElement.hidden = true;
 cardTwoElement.hidden = true;
 cardThreeElement.hidden = true;
@@ -28,7 +27,7 @@ const ChangeSelector = () => {
     cardThreeElement.hidden = !cardThreeElement.hidden;
 }
 
-// Показує активний діалог та персонажу
+// Показує активний діалог та персонажа
 const SeeActivPerson = () => {
     if (dialogArr[dialogCounter][0] === "left") {
         leftPersonName.className = "person-name-activ";
@@ -113,7 +112,7 @@ let itemsSelectorStage = 0;
 
 let dialogCounter = 0;
 
-let dialogWork = true;
+let dialogWork = false;
 
 const HideSelector = () => {
     if (dialogCounter == 4 || dialogCounter == 10) {
@@ -127,6 +126,19 @@ const DialogCounterActiv = () => {
         dialogWork = false;
     }
 }
+
+document.addEventListener("keydown", (event)=> {
+    if (event.code === "Space") {
+        if (dialogWork) {
+            SeeActivPerson();
+            dialogWindowElement.textContent = dialogArr[dialogCounter][1];
+            dialogCounter++;
+            HideSelector();
+            DialogCounterActiv();
+        }
+    }
+} )
+
 
 dialogWindowElement.onclick = function() {
     if (dialogWork) {
@@ -191,4 +203,15 @@ restartBtn.onclick = function() {
 const SeeLoseWindow = (numberImg) => {
     restartWindow.insertAdjacentHTML("afterbegin", loseImg[0][numberImg])
     restartWindow.hidden = false;
+}
+
+
+// Частина що відповідає за старт
+
+const tutorialPages = document.querySelector(".tuorial-pages");
+const compleatTutorial = document.getElementById("read-tutorial");
+
+compleatTutorial.onclick = () => {
+    tutorialPages.remove();
+    dialogWork = true;
 }
