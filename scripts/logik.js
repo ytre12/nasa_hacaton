@@ -27,6 +27,15 @@ const ChangeSelector = () => {
     cardThreeElement.hidden = !cardThreeElement.hidden;
 }
 
+//Зміна bg
+const ChangeBg = (num) => {
+    if (num === 4) {
+        document.body.style.backgroundImage = 'url("img/ai-gen-bg.png")';
+    } else if (num === 90) {
+        document.body.style.backgroundImage = 'url("img/ai-gen-bg.png")';
+    }
+}
+
 // Показує активний діалог та персонажа
 const SeeActivPerson = () => {
     if (dialogArr[dialogCounter][0] === "left") {
@@ -147,6 +156,7 @@ dialogWindowElement.onclick = function() {
         dialogCounter++;
         HideSelector();
         DialogCounterActiv();
+        ChangeBg(dialogCounter)
     }
 }
 

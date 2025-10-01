@@ -3,7 +3,7 @@
 body {
   /* background-color: #D9D9D9; */
   background-image: url("img/v6.896Z.png"); 
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: "Comic Relief";
   /* background-position: center;  */
@@ -56,10 +56,10 @@ body {
   width: 170px;
   height: 170px;
   border-radius: 15px;
-  background-color: #828282a2;
+  background-color: #0c1c749d;
   border-style: solid;
   border-width: 2px;
-  border-color: #696969;
+  border-color: #65d4f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +69,7 @@ body {
 
 .selector-card:hover {
   transform: scale(1.15);
+  box-shadow: 0px 0px 5px #65d4f6;
 }
 
 .dialog-pages {
@@ -133,6 +134,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: transform 0.4s ease;
+  box-shadow: 0px 0px 2px #49b8e1;
 }
 
 .btn-comand:hover {
@@ -174,10 +176,11 @@ body {
   bottom: -25px;
   height: 65px;
   width: 65px;
+  border-color: #49b8e1;
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
-  background-color: #9C9C9C;
+  background-color: #0c1c74e5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -193,7 +196,7 @@ body {
   font-size: 96px;
   font-weight: 700;
   position: absolute;
-  top: 120px;
+  top: 80px;
   color: #49b8e1;
   text-shadow: -4px 3px 5px #7031d6c2;
 }
@@ -226,7 +229,7 @@ body {
 }
 
 .lose-window {
-  background-color: #696969;
+  background-color: #0c1c74e5;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -236,7 +239,7 @@ body {
   height: 400px;
   border-radius: 15px;
   border-style: solid;
-  border-color: #434343;
+  border-color: #49b8e1;
   z-index: 100;
 }
 
