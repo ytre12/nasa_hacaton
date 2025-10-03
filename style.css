@@ -2,7 +2,7 @@
 
 body {
   /* background-color: #D9D9D9; */
-  background-image: url("img/v6.896Z.png"); 
+  background-image: url("img/Bg/v6.896Z.png"); 
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Comic Relief";
@@ -21,7 +21,7 @@ body {
   justify-content: center;
   gap: 0px;
   background-color: #434343;
-  background-image: url(./img/ai-gen-bg.png);
+  background-image: url(./img/Bg/ai-gen-bg.png);
   background-size: cover;
   background-position: center;
   z-index: 1200;
@@ -244,11 +244,13 @@ body {
 }
 
 .person {
-  width: 220px;
+  /* height: 400px; */
+  width: 210px;
 }
 
 .person-activ {
-  width: 220px;
+  /* height: 400px; */
+  width: 210px;
   transform: scale(1.1);
 
   position: relative;
@@ -273,7 +275,7 @@ body {
   top: 0px;
   width: 100%;
   height: 100%;
-  background-image: url(./img/tutor-bg.677Z.png);
+  background-image: url(./img/Bg/tutor-bg.677Z.png);
   background-size: cover;
   background-position: center;
   display: flex;
