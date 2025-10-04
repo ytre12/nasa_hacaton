@@ -2,11 +2,12 @@
 
 body {
   /* background-color: #D9D9D9; */
-  background-image: url("img/Bg/v6.896Z.png"); 
+  background-image: url("img/Bg/Sity.gif"); 
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Comic Relief";
-  /* background-position: center;  */
+  background-attachment: fixed;
+  background-position: center center; 
 }
 
 .start-pages {
@@ -196,7 +197,7 @@ body {
   font-size: 96px;
   font-weight: 700;
   position: absolute;
-  top: 80px;
+  top: 5%;
   color: #49b8e1;
   text-shadow: -4px 3px 5px #7031d6c2;
 }
