@@ -211,11 +211,40 @@ const dialogArr = [
                     ["right", "Mo-Baby"],
 
 
-                    ["", ""],
-                    ["", ""],
-                    ["", ""],
-                    ["", ""],
-                    ["", ""],
+                    ["", "(Vili arrives at the space station)"],
+                    ["", "(He enters the control cabin, the Astronaut does"],
+                    ["left", "Hallo"],
+                    ["right", "Oh, Mr. Vili."],
+                    ["", "(A red light on the panel lights up)"],
+                    ["", "(A warning about the solar wind begins to sound from the loudspeakers)"],
+                    ["left", "The solar wind urgently needs to be protected from radiation!"],
+                    ["right", "We must act quickly!"],
+                    ["", "Where should you hide to protect yourself from the solar wind?"],
+                    ["", "(Willie and the astronaut wait for the solar wind to end)"],
+                    ["left", "The solar wind has already passed us by."],
+                    ["right", "Yes, the Sun's activity has increased recently."],
+                    ["left", "I wonder why the plasma carried by the solar wind doesn't affect people on Earth."],
+                    ["right", "Earth's magnetosphere - it rejects most charged particles, preventing them from reaching the Earth's surface."],
+                    ["left", "Logically, the Earth's magnetosphere acts weakly here, and offers almost no protection to us in space."],
+                    ["", "(The Astronaut returns to the cockpit)"],
+                    ["", "(He stares blankly at the screen, which is flashing red)"],
+                    ["right", "Alas, we have lost satellite signals!"],
+                    ["left", "Apparently it was because of the solar wind that some devices failed."],
+                    ["right", "I urgently needed to send data about the magnetic field."],
+                    ["left", "This data will be useful for determining the location of magnetic storms."],
+                    ["right", "Yes, and now we can't contact the satellites that have this information."],
+                    ["left", "I think I need to recalibrate during the reception."],
+                    ["right", "Yes, but I don't have a spacesuit to go into outer space."],
+                    ["", "What can help fix receivers?"],
+                    ["", "(Vili flies into outer space)"],
+                    ["", "(He fixes the receivers and returns to the station)"],
+                    ["left", "I fixed the receivers, can you contact the satellites now?"],
+                    ["right", "So I'm receiving data now, and I'm getting ready to send it to Earth."],
+                    ["right", "That a powerful magnetic storm is approaching the North."],
+                    ["left", "Thanks to us, people will be ready for it!"],
+                    ["right", "Yes, because that's our task here."],
+                    ["right", "To care for those below."],
+                    ["", "Thank you for reading"],
                     ];
 
 // Масив діалогів при парвильній відповіді
@@ -269,14 +298,14 @@ let dialogCounter = 0;
 let dialogWork = false;
 
 const HideSelector = () => {
-    if (dialogCounter == 11 || dialogCounter == 21 || dialogCounter == 29 || dialogCounter == 38) {
+    if (dialogCounter == 11 || dialogCounter == 21 || dialogCounter == 29 || dialogCounter == 36) {
         ChangeSelector();
         dialogWork=false;
     }  
 }
 
 const DialogCounterActiv = () => {
-    if (dialogCounter >= 110) {
+    if (dialogCounter >= 132) {
         dialogWork = false;
     }
 }
